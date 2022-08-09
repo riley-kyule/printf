@@ -28,7 +28,7 @@ int _printf(const char *format, ...)
 		if (*p == '%')
 		{
 			p++;
-			if(*p == '%')
+			if (*p == '%')
 			{
 				count += _putchar('%');
 				continue;
@@ -44,5 +44,5 @@ int _printf(const char *format, ...)
 	}
 	_putchar(-1);
 	va_end(arguments);
-	return(count);
+	return (count);
 }

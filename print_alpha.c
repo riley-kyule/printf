@@ -18,7 +18,7 @@ int print_string(va_list l, flags_t *f)
 }
 
 /**
- * print_char is used to print a character
+ * print_char is used to print a character.
  * ...l: va_list arguments from _printf
  * ...f: pointer to the struct flags that determines whether a flag is passed to _printf
  * Return: number of characters printed

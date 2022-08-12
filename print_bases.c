@@ -6,7 +6,7 @@
  * ...f: pointer to the struct flags that determines whether a flag is passed to _printf
  * Return: the number of charcters printed
  */
-int print_hex(va_list l, flags_t *f)
+int print_hex(va_list l, flags *f)
 {
 	unsigned int num = va_arg(l, unsigned int);
 	char *str = convert(num, 16, 1);
@@ -24,7 +24,7 @@ int print_hex(va_list l, flags_t *f)
  * ...f: pointer to the struct that determines whether a flag is passed to _printf
  * Return: the number of characters printed
  */
-int print_hex_big(va_list l, flags_t *f)
+int print_hex_big(va_list l, flags *f)
 {
 	unsigned int num = va_arg(l, unsigned int);
 	char *str = convert(num, 16, 0);
@@ -42,7 +42,7 @@ int print_hex_big(va_list l, flags_t *f)
  * ...f: pointer to the struct that determine whether a flag is passed to _printf
  * Return: the number of characters printed
  */
-int print_binary(va_list l, flags_t *f)
+int print_binary(va_list l, flags *f)
 {
 	unsigned int num = va_arg(l, unsigned int);
 	char *str = convert(num, 2, 0);
@@ -57,7 +57,7 @@ int print_binary(va_list l, flags_t *f)
  * ...f: pointer to the struct that determines whether a flag is passed to _printf
  * Return: the number of characters printed
  */
-int print_octal(va_list l, flags_t *f)
+int print_octal(va_list l, flags *f)
 {
 	unsigned int num = va_arg(l, unsigned int);
 	char *str = convert(num, 8, 0);

@@ -6,7 +6,7 @@
  * ...f: pointer to the struct flags that determines whether a flag is passed to _printf
  * Return: number of characters printed
  */
-int print_string(va_list l, flags_t *f)
+int print_string(va_list l, flags *f)
 {
 	char *s = va_arg(l, char *);
 

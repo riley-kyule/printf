@@ -39,6 +39,20 @@ struct fmt
  */
 typedef struct fmt fmt_t;
 
+typedef struct flags
+{
+	int plus;
+	int space;
+	int hash;
+} flags_t;
+
+
+typedef struct printHandler
+{
+	char c;
+	int (*f)(va_list ap, flags_t *f);
+} ph;
+
 int _printf(const char *format, ...);
 int handle_print(const char *fmt, int *i,
 va_list list, char buffer[], int flags, int width, int precision, int size);

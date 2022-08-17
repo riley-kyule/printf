@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * print_int is used to print an integer
- * ...l: va_list of arguments from _printf
- * ...f: pointer to the struct flags determining whether a flag is passed to _printf
- * Return: number of characters printed
+ * print_int - prints an integer
+ * @l: va_list of arguments from _printf
+ * @f: pointer to the struct flags determining
+ * if a flag is passed to _printf
+ * Return: number of char printed
  */
 int print_int(va_list l, flags_t *f)
 {
@@ -22,9 +23,9 @@ int print_int(va_list l, flags_t *f)
 }
 
 /**
- * print_unsigned is used to print an unsigned integer
- * ...l: va_list of arguments from _printf
- * ...f: pointer to the struct flags determining
+ * print_unsigned - prints an unsigned integer
+ * @l: va_list of arguments from _printf
+ * @f: pointer to the struct flags determining
  * if a flag is passed to _printf
  * Return: number of char printed
  */
@@ -38,8 +39,9 @@ int print_unsigned(va_list l, flags_t *f)
 }
 
 /**
- * print_number is a helper function that loops through an integer and prints all its digits
- * ...n: integer to be printed
+ * print_number - helper function that loops through
+ * an integer and prints all its digits
+ * @n: integer to be printed
  */
 void print_number(int n)
 {
@@ -59,8 +61,9 @@ void print_number(int n)
 }
 
 /**
- * count_digit is used to return the number of digits in an integer
- * ...i: integer to evaluate
+ * count_digit - returns the number of digits in an integer
+ * for _printf
+ * @i: integer to evaluate
  * Return: number of digits
  */
 int count_digit(int i)
